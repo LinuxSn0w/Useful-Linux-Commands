@@ -1,0 +1,84 @@
+#										 A helpful list of Linux Terminal Commands by Sn0w
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#Remove your GUI on boot 
+$sudo systemctl set-default multi-user
+$gnome-session-quit
+$sudo reboot
+#Renable GUI on boot
+$sudo systemctl set-default graphical
+#Start GUI via terminal
+$sudo systemctl start gdm3
+
+#--------------------------------------------------#
+
+#Drive copying with DD command
+$sudo dd if=/dev/#DRIVENAME of=/dev/#DRIVENAME conv=sync status=progress
+
+#--------------------------------------------------#
+
+#SSH install & Config
+$sudo apt-get updates
+$sudo apt-get install openssh-server
+#To verify SSH server is running
+$sudo service ssh status 
+#To config SSH file
+$sudo nano /etc/ssh/sshd_config
+#To stop SSH server
+$sudo service ssh stop
+#To start SSH server
+$sudo service ssh start
+
+#--------------------------------------------------#
+
+#Basic commands
+
+#To root user
+$sudo su
+#To exit root user
+$exit
+#To make a file directory
+$sudo mkdir 
+#To create a text file
+$sudo touch #FILENAME.txt
+#To copy a file
+$sudo cp #FILENAME
+#To remove a file 
+$sudo rm #FILENAME
+#To remove a file Directory
+$sudo rm -r #DIRECTORYNAME
+#To check your OS
+$sudo uname
+#To kill a command in terminal
+CTRL + C
+#To clear a terminal window
+CTRL + L
+#To see who all is logged into the server
+$sudo users
+#To show all inputs from a mouse & keyboard
+$sudo $xev
+#To list devices plugged in via USB
+$sudo lsusb
+#To list hard drives
+$sudo lsblk
+#Netstat install
+$sudo apt install net-tools
+#To check ports and inet
+$sudo netstat
+#To install GParted (CAN NO BE USED WITH NO GUI)
+$sudo apt-get install gparted
+#To run GParted
+$sudo gparted
+#To install bashtop
+$sudo snap install bashtop
+#To install htop
+$sudo apt install htop
+$sudo snap install htop
+$sudo htop
+#To check what bit version you have
+$sudo uname -m
+
+#
+#--------------------------------------------------#
+#
+
